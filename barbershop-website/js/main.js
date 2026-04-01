@@ -74,8 +74,31 @@ const services = [
         description: "A clean fade with finishing detail for a sharp, modern look.",
         price: 35,
         popular: false
-    }
- 
+    },
+ {
+        title: "Classic Haircut",
+        image: "assets/images/feature-1.jpg",
+        alt: "Classic haircut",
+        description: "Timeless cuts with modern precision—tailored to your style.",
+        price: 25,
+        popular: true
+    },
+    {
+        title: "Beard Trim",
+        image: "assets/images/feature-4.jpeg",
+        alt: "Beard trim",
+        description: "Shape, line-up, and refine your beard for a clean finish.",
+        price: 15,
+        popular: false
+    },
+    {
+        title: "Straight Razor Shave",
+        image: "assets/images/feature-3.jpg",
+        alt: "Straight razor shave",
+        description: "Hot towel, smooth shave, and classic barbershop experience.",
+        price: 30,
+        popular: true
+    },
        
 ];
  
@@ -306,7 +329,7 @@ const setupScrollShiftCards = () => {
             return;
         }
  
-        currentX -= scrollDelta * 0.5;
+        currentX -= scrollDelta * 10;
  
         const maxShift = getMaxShift();
  
